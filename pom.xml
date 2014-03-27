@@ -29,7 +29,7 @@
     <properties>
         <jsf-myfaces.version>2.2.0</jsf-myfaces.version>
         <jsf-mojarra.version>2.2.5</jsf-mojarra.version>
-        <openwebbeans.version>1.2.1</openwebbeans.version>
+        <weld.version>2.0.5.Final</weld.version>
         <ds.version>0.6</ds.version>
         <maven.jetty.plugin.version>9.0.5.v20130815</maven.jetty.plugin.version>
     </properties>
@@ -151,44 +151,8 @@
         <!-- JSR-330 -->
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-atinject_1.0_spec</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!-- JSR-299 -->
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jcdi_1.0_spec</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jta_1.1_spec</artifactId>
-            <version>1.1.1</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-interceptor_1.1_spec</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-validation_1.0_spec</artifactId>
             <version>1.1</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jpa_1.0_spec</artifactId>
-            <version>1.1.2</version>
             <scope>compile</scope>
         </dependency>
 
@@ -212,42 +176,11 @@
             <version>1.6.1</version>
         </dependency>
 
-        <!-- OpenWebBeans -->
         <dependency>
-            <groupId>org.apache.openwebbeans</groupId>
-            <artifactId>openwebbeans-impl</artifactId>
-            <version>${openwebbeans.version}</version>
-            <scope>runtime</scope>
+        	<groupId>org.jboss.weld.servlet</groupId>
+        	<artifactId>weld-servlet</artifactId>
+        	<version>${weld.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.openwebbeans</groupId>
-            <artifactId>openwebbeans-jsf</artifactId>
-            <version>${openwebbeans.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.openwebbeans</groupId>
-            <artifactId>openwebbeans-web</artifactId>
-            <version>${openwebbeans.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.openwebbeans</groupId>
-            <artifactId>openwebbeans-spi</artifactId>
-            <version>${openwebbeans.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.openwebbeans</groupId>
-            <artifactId>openwebbeans-resource</artifactId>
-            <version>${openwebbeans.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
         
         <!-- test dependencies -->
         <dependency>
