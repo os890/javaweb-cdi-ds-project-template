@@ -30,7 +30,7 @@
         <jsf-myfaces.version>2.2.0</jsf-myfaces.version>
         <jsf-mojarra.version>2.2.5</jsf-mojarra.version>
         <openwebbeans.version>1.2.4</openwebbeans.version>
-        <ds.version>0.7</ds.version>
+        <ds.version>1.0.0</ds.version>
         <maven.jetty.plugin.version>9.0.5.v20130815</maven.jetty.plugin.version>
     </properties>
 
